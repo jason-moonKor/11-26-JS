@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			#aa {
+				width: 180px;
+				border: solid 2px black;
+			}
+			a {
+				text-decoration: none;
+				color: red;
+			}
+			a:after {
+				background: none repeat scroll 0 0 transparent;
+				bottom: 0;
+				display: flex;
+				content: "";
+				height: 2px;
+				background: red;
+				transition: 0.5s ease 0s;
+				width: 0;
+			}
+			a:hover:after {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="aa">
+			<a href="#">THIS IS TEST TEXT LINE</a>
+		</div>
+	</body>
+</html>
